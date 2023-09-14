@@ -1,17 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import Header from "nav/Header";
 import Footer from "footer/Footer";
 
 import "./index.scss";
-import Shell from "./Shell";
 
-const App = () => {
+const Shell = () => {
+  console.log('*****')
   return (
     <div className="text-3xl mx-auto max-w-6xl">
-      <Shell />
+      <Header />
+      <p>Hello</p>
+      <Footer />
+
     </div>
   );
 };
-ReactDOM.render(<App />, document.getElementById("app"));
+export default Shell

@@ -44,12 +44,15 @@ module.exports = {
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        footer: "host@http://localhost:3002/remoteEntry.js",
+        footer: "footer@http://localhost:3002/remoteEntry.js",
         nav: "nav@http://localhost:3001/remoteEntry.js",
         stitchinglayerroute:
           "stitchinglayerroute@http://localhost:3003/remoteEntry.js",
         stitchinglayercontacts:
           "stitchinglayercontacts@http://localhost:3006/remoteEntry.js",
+      },
+      exposes: {
+        "./App": "./src/Shell.jsx",
       },
       shared: {
         ...deps,
