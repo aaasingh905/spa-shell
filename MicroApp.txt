@@ -1,0 +1,7 @@
+Host App
+
+2 Stitching layer microapps
+stitching layer 1 microapp has routing via browser router renders 2 different microapps home and about
+stitching layer 2 has one microapp which renders contacts page
+Header Micro App
+Footer Micro App
