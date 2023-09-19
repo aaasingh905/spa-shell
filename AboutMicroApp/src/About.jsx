@@ -4,8 +4,28 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 
 const About = () => (
-  <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <div>About</div>
+  <div
+    style={{
+      flex: 1,
+      width: "100%",
+      height: "100%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    <div
+      style={{
+        height: "300px",
+        width: "300px",
+        background: "rgb(84, 210, 251)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      About
+    </div>
   </div>
 );
 

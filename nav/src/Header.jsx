@@ -1,15 +1,33 @@
 import React from "react";
 
-export default () => {
+export default ({ navigationHelper }) => {
   return (
-    <header className="bg-blue-700 text-white font-bold text-3xl p-5 flex">
+    <header
+      className=" text-white font-bold text-3xl p-5 flex"
+      style={{ background: "lightgrey" }}
+    >
       <nav>
-        <ul className="navbar">
-          <li className="navbar-link">
-            <button onClick={() => (window.location = "/home")}>Home</button>
+        <ul
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <li style={{ padding: "15px", color: "black" }}>
+            <button onClick={() => navigationHelper("/customer-dashboard")}>
+              Home
+            </button>
           </li>
-          <li className="navbar-link">
-            <button onClick={() => (window.location = "/about")}>About</button>
+          <li style={{ padding: "15px", color: "black" }}>
+            <button onClick={() => navigationHelper("/account-dashboard")}>
+              About
+            </button>
+          </li>
+          <li style={{ padding: "15px", color: "black" }}>
+            <button onClick={() => navigationHelper("/bill-pay")}>
+              Contacts
+            </button>
           </li>
         </ul>
       </nav>
