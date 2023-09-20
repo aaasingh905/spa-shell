@@ -18,7 +18,7 @@ const About = () => (
       style={{
         height: "300px",
         width: "300px",
-        background: "rgb(84, 210, 251)",
+        background: "rgb(241, 98, 115)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

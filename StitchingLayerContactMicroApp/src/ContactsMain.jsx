@@ -5,7 +5,7 @@ import "./index.scss";
 const ContactsMain = () => (
   <div
     style={{
-      background: "rgb(158, 231, 158)",
+      background: "rgb(173, 229, 246)",
       width: "100%",
       height: "100%",
       display: "flex",
