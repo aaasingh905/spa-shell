@@ -24,7 +24,7 @@ const About = () => (
         alignItems: "center",
       }}
     >
-      About
+      Account Dashboard Micro App
     </div>
   </div>
 );

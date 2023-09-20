@@ -21,12 +21,12 @@ export default ({ navigationHelper }) => {
           </li>
           <li style={{ padding: "15px" }}>
             <button onClick={() => navigationHelper("/account-dashboard")}>
-              Account Dashboard
+              Accounts
             </button>
           </li>
           <li style={{ padding: "15px" }}>
             <button onClick={() => navigationHelper("/bill-pay")}>
-              Contacts
+              Bill Pay
             </button>
           </li>
         </ul>

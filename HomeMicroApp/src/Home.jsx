@@ -24,7 +24,7 @@ const Home = () => (
         alignItems: "center",
       }}
     >
-      Home
+      Customer Dashboard Micro App
     </div>
   </div>
 );

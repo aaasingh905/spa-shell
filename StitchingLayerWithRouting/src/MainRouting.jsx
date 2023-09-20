@@ -17,6 +17,15 @@ const MainRouting = ({ navigationHelper }) => {
     };
     return routes[route] || Home;
   }, [route]);
+  const goBack = (event) => {
+    if (route !== window.location.pathname) {
+      setRoute(window.location.pathname);
+    }
+  };
+  useEffect(() => {
+    addEventListener("popstate", goBack);
+    return () => window.removeEventListener("popstate", goBack);
+  }, []);
 
   return (
     <div
